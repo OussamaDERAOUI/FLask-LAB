@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decision Tree Model for Water Potability</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        p {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Decision Tree Model Deployment for Water Potability</h2>
+    <form action="/predict" method="post">
+        <label for="hardness">Hardness:</label>
+        <input type="number" name="hardness" required><br>
+
+        <label for="sulfate">Sulfate:</label>
+        <input type="number" name="sulfate" required><br>
+
+        <label for="conductivity">Conductivity:</label>
+        <input type="number" name="conductivity" required><br>
+
+        <label for="organic_carbon">Organic Carbon:</label>
+        <input type="number" name="organic_carbon" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+    <h2>Prediction:</h2>
+    <p>The water is {{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
