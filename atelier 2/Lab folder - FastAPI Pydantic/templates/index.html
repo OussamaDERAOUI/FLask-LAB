@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Furniture Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        p {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Decision Tree Model Deployment for Furniture Prediction</h2>
+    <form action="/predict" method="post">
+        <label for="category">Category</label>
+        <input type="number" name="category" required><br>
+
+        <label for="sellable_online">Sellable online</label>
+        <input type="number" name="sellable_online" required><br>
+
+        <label for="other_colors">Other colors</label>
+        <input type="number" name="other_colors" required><br>
+
+        <label for="depth">Depth</label>
+        <input type="number" name="depth" required><br>
+
+        <label for="height">Height</label>
+        <input type="number" name="height" required><br>
+
+        <label for="width">Width</label>
+        <input type="number" name="width" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+    <h2>Prediction:</h2>
+    <p>The furniture price is {{ prediction }} $ </p>
+    {% endif %}
+
+</body>
+</html>
