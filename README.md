@@ -1,4 +1,10 @@
-# FLask-LAB
+# Atelier 4
+
+# Atelier 3
+
+# Atelier 2 : FastAPI Pydantic
+
+# Atelier 1 : FLask
 
 ### Decision Tree Model Deployment for Water Potability
 
