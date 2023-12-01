@@ -8,9 +8,9 @@ This project is a web application designed to predict the potability of water ba
 
 # Atelier 2 : FastAPI Pydantic
 
-![alt text]("atelier 2/fapi1.png")
+![alt text](fapi1.png)
 
-![alt text]("atelier 2/fapi2.png")
+![alt text](fapi2.png)
 
  
 
