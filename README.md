@@ -8,6 +8,8 @@ This project is a web application designed to predict the potability of water ba
 
 # Atelier 2 : FastAPI Pydantic
 
+Same work as FLASK just using FastAPI Pydantic.
+
 ![alt text](fapi1.png)
 
 ![alt text](fapi2.png)
