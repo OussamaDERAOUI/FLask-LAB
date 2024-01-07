@@ -15,6 +15,8 @@ Same work as FLASK just using FastAPI Pydantic.
 ![alt text](fapi2.png)
 # Atelier 3 : Model Packaging
 
+Tried everything to make azure work, but no luck.
+
 # Atelier 4 : Mlflow - Databricks
 ![alt text](screenshots/databricks1.png)
 
