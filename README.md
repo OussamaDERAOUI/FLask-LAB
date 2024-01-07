@@ -14,6 +14,6 @@ This project is a web application designed to predict the potability of water ba
 # Atelier 3 : Model Packaging
 
 # Atelier 4 : Mlflow - Databricks
-![alt text](screenshots\databricks1.png)
+![alt text](screenshots/databricks1.png)
 
-![alt text](screenshots\databricks2.png)
+![alt text](screenshots/databricks2.png)
