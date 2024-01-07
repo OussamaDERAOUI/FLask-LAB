@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Furniture Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            width: 50%;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        p {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Decision Tree Model Deployment for Furniture Prediction</h2>
+    <form action="/predict" method="post">
+        <label for="gender">Gender</label>
+        <input type="number" name="gender" required><br>
+
+        <label for="year">Year of study</label>
+        <input type="number" name="year" required><br>
+
+        <label for="marital">Marital Status</label>
+        <input type="number" name="marital" required><br>
+
+        <label for="anxiety">Anxiety</label>
+        <input type="number" name="anxiety" required><br>
+
+        <label for="panic">Panic attacks</label>
+        <input type="number" name="panic" required><br>
+
+        <label for="treatement">Treatement</label>
+        <input type="number" name="treatement" required><br>
+
+	<label for="maxgpa">maxgpa</label>
+        <input type="number" name="maxgpa" required><br>
+
+	<label for="mingpa">mingpa</label>
+        <input type="number" name="mingpa" required><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+    <h2>Prediction:</h2>
+    <p>The prediction is {{ prediction }}</p>
+    {% endif %}
+
+</body>
+</html>
