@@ -19,3 +19,25 @@ Same work as FLASK just using FastAPI Pydantic.
 ![alt text](screenshots/databricks1.png)
 
 ![alt text](screenshots/databricks2.png)
+
+# Atelier : Model Testing
+
+## 1 - FastAPI Transformer model serving
+
+![alt text](screenshots/fastapitest.png)
+
+## 2 - Dockerizing API
+
+### Docker :
+![alt text](screenshots/docker.png)
+![alt text](screenshots/Dockerizing.png)
+
+### Postman :
+
+![alt text](screenshots/postmantest.png)
+
+## 3 - Faster Transformer model serving using Tensorflow Extended
+
+![alt text](screenshots/transformers.png)
+
+## 4 - Load testing using Locust
