@@ -42,3 +42,10 @@ Tried everything to make azure work, but no luck.
 
 ![alt text](screenshots/transformers.png)
 
+## 4 - Load testing with locust
+
+![alt text](screenshots/locust.png)
+
+## Results:
+
+![alt text](screenshots/results.png)
